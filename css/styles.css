@@ -1,0 +1,63 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:aqua;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: 60vh;
+}
+
+.boots, .pants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    height: 15vh;
+    background-image: url("../img/dance.gif");
+}
+
+.dance{
+    position: absolute;
+    z-index: 30;
+    top: 45vh;
+    left: 70vw;
+    height: 45vh;
+    width: 20vw;
+    background-image: url("../img/sunglasses-dance.gif");
+    -webkit-box-shadow: 5px 12px 38px 13px #FF22D2; 
+    box-shadow: 5px 12px 38px 13px #FF22D2;
+}
+
+.dance2{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    height: 14vh;
+    background-image: url("../img/warblygargle-dance.gif");
+
+}
+.dance3{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    height: 11vh;
+    background-image: url("../img/bizness-dance.gif");
+
+}
+

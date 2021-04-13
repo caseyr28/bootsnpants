@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    <title>Boots -n- Pants</title>
+    <meta name="description" content="Boots 'n Pants">
+    <meta name="author" content="rc">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    </head>
+
+    <body>
+        <div id="container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lzhAkk0eUiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                <img src="img/whitey-dance.gif" alt="white-guy-underbite dancing">
+            </div>
+            <!-- <div class="boots" >
+                <img src="img/boots-img.jpg" 
+                    alt="image of fancy boots"
+                    onmouseover="PlaySound('boots')"
+                    onmouseout="StopSound('boots')"
+                >
+            </div>
+            <div class="pants">
+                <img src="img/pants-img.jpg" 
+                    alt="image of pants"
+                    onmouseover="PlaySound('pants')"
+                    onmouseout="StopSound('pants')"
+                >
+            </div> -->
+        </div>
+        <div class="title">
+        </div>
+        <div class="dance">
+            <h1>Boots'n Pants</h1>
+        </div>
+        <div class="dance2">
+            <h1>A dance sensation</h1>
+        </div>
+        <div class="dance3">
+            <h1>by Megan</h1>
+        </div>
+    </body>
+    <audio id='boots' src="audio/boots.m4a"></audio>
+    <audio id='pants' src="audio/pants.m4a"></audio>
+    <script>
+        function PlaySound(soundobj) {
+            var thissound=document.getElementById(soundobj);
+            thissound.play();
+        }
+
+        function StopSound(soundobj) {
+            var thissound=document.getElementById(soundobj);
+            thissound.pause();
+            thissound.currentTime = 0;
+        }
+    </script>
+</html>
